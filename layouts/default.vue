@@ -2,14 +2,14 @@
   <div class="h-full">
     <header class="h-10 relative">
       <nuxt-link to="/">
-        <img class="absolute inset-0 m-auto" src="/images/logo.png" />
+        <img class="absolute inset-0 m-auto" :src="require('@/static/images/logo.png')" />
       </nuxt-link>
     </header>
     <main class="min-h-screen py-16">
       <Nuxt />
     </main>
     <base-button fab>
-      <img src="/images/add.png" />
+      <img :src="require('@/static/images/add.png')" />
     </base-button>
     <footer>
       <div class="container mx-auto py-4 border-t border-gray-300">

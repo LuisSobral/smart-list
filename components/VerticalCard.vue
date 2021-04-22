@@ -4,7 +4,7 @@
       class="contact relative bg-white rounded-lg shadow-md py-10 px-2 cursor-pointer"
     >
       <img
-        :src="`/images/${isFavorite ? 'star' : 'favorite'}.png`"
+        :src="require(`@/static/images/${isFavorite ? 'star' : 'favorite'}.png`)"
         class="absolute top-3 left-4 cursor-pointer"
         @click="
           $event.stopPropagation()

@@ -2,7 +2,7 @@
   <div class="container mx-auto px-4">
     <div class="flex items-center p-0 sm:p-5">
       <div class="contact-avatar relative rounded-full w-20 h-20">
-        <img class="absolute inset-0 m-auto w-1/2" src="/images/blip.png" />
+        <img class="absolute inset-0 m-auto w-1/2" :src="require('@/static/images/blip.png')" />
       </div>
       <div class="ml-5">
         <span class="contact-name font-bold">{{ contact.name }}</span>
@@ -36,7 +36,7 @@
             bg-color="#2cc3d5"
             title="Active users"
             class="sm:col-span-2 md:col-span-7 lg:col-span-8"
-            icon-src="/images/user.png"
+            :icon-src="require('@/static/images/user.png')"
             :analytic-data="contact.analytics.user.actived"
           />
         </div>
@@ -45,20 +45,20 @@
             bg-color="#4dcb7b"
             class="sm:col-span-2 md:col-span-6 lg:col-span-7"
             title="Received messages"
-            icon-src="/images/union.png"
+            :icon-src="require('@/static/images/union.png')"
             :analytic-data="contact.analytics.message.received"
           />
           <analytics-card
             bg-color="#517bf2"
             class="sm:col-span-2 md:col-span-6 lg:col-span-5"
             title="Sent messages"
-            icon-src="/images/sent.png"
+            :icon-src="require('@/static/images/sent.png')"
             :analytic-data="contact.analytics.message.sent"
           />
         </div>
       </div>
       <div class="w-full xl:w-1/3 order-first mb-10 xl:order-2 xl:m-auto">
-        <img class="mx-auto" src="/images/plano.png" />
+        <img class="mx-auto" :src="require('@/static/images/plano.png')" />
         <p class="status-title text-center mt-6 text-xl font-medium">
           Status account
         </p>

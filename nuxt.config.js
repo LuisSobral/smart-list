@@ -2,7 +2,9 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  rootDir: 'C:/Users/luisb/Desktop/Códigos/take-list',
+  router: {
+    base: '/take-list/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -15,7 +17,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/take-list/favicon.ico' }],
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -41,5 +43,5 @@ export default {
   // https://github.com/nuxt-community/style-resources-module
   styleResources: {
     scss: ['~assets/scss/_variables.scss'],
-  },
+  }
 }

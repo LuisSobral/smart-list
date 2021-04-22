@@ -2,7 +2,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-12">
     <div class="relative p-4 my-2 sm:my-0">
       <img
-        :src="`/images/${isFavorite ? 'star' : 'favorite'}.png`"
+        :src="require(`@/static/images/${isFavorite ? 'star' : 'favorite'}.png`)"
         class="w-1/12 sm:w-1/4 absolute inset-0 m-auto cursor-pointer"
         @click="$emit('favorite', item)"
       />

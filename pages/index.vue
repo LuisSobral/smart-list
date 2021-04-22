@@ -33,12 +33,12 @@
         </base-button>
         <img
           class="inline cursor-pointer mt-2 sm:mt-0"
-          src="/images/organize-blocks.png"
+          :src="require('@/static/images/organize-blocks.png')"
           @click="listType = 'vertical'"
         />
         <img
           class="inline cursor-pointer mt-2 sm:mt-0"
-          src="/images/organize-list.png"
+          :src="require('@/static/images/organize-list.png')"
           @click="listType = 'horizontal'"
         />
       </div>
