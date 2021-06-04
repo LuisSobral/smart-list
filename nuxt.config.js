@@ -2,10 +2,6 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  router: {
-    base: '/take-list/'
-  },
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'take-list',
@@ -34,11 +30,6 @@ export default {
     // https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
   ],
-
-  // https://go.nuxtjs.dev/tailwindcss
-  tailwindcss: {
-    jit: true,
-  },
 
   // https://github.com/nuxt-community/style-resources-module
   styleResources: {
